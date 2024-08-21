@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Body */
+.body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #0d0c0c;
+  background-color: #f4f4f4;
+  width: 100vw;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  margin-top: 75px;
+  background-color: #2b6775;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.header-intro {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  background-color: #3a506b;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #1a73e8;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide the menu toggle checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Main Content */
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Blog Post */
+.blog-post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1a73e8;
+}
+
+/* Blog Intro */
+.blog-intro {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Blog Content */
+.blog-content {
+  margin-bottom: 20px;
+}
+
+/* Blog Figure */
+.blog-figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Blog Image and Video */
+.blog-image,
+.blog-video {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Blog Caption */
+.blog-caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Blog Highlights Title */
+.blog-highlights-title {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+/* Blog Highlights List */
+.blog-highlights-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Blog Highlight */
+.blog-highlight {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* About Me */
+.about-me {
+  margin: 10px 20px 10px;
+  background-color: #e8e8e8;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.about-content {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #0c0c0c;
+}
+
+/* Contact Section */
+.contact {
+  margin: 20px;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-detail {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  margin-bottom: 0;
+}
+
+.social-links a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.social-links a i {
+  margin-right: 5px;
+}
+
+.social-links a:hover {
+  color: #2b5d8f;
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 5px;
+  color: #34495e;
+}
+
+.input-field {
+  flex: 3;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #1abc9c;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+  background-color: #0d345b;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background-color: #3a506b;
+  color: white;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    margin: 60px 0px 10px;
+    border-radius: 5px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-intro {
+    font-size: 1rem;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3a506b;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-toggle:checked + .hamburger + .nav-list {
+    display: flex;
+    height: auto;
+    opacity: 1;
+  }
+
+  .main {
+    padding: 2px;
+  }
+
+  .blog-post {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .about-me {
+    margin: 5px 0px 5px;
+    background-color: #e8e8e8;
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  .contact {
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .about-content,
+  .contact-detail {
+    font-size: 1rem;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    padding-left: 0;
+  }
+
+  .nav-item a {
+    padding: 8px 12px;
+  }
+
+  .main {
+    padding: 8px;
+  }
+
+  .blog-post {
+    padding: 10px;
+  }
+
+  .blog-title {
+    font-size: 1.3rem;
+  }
+
+  .blog-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-me {
+    margin: 5px 10px 5px;
+    background-color: #e8e8e8;
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  .contact {
+    margin: 5px 10px 5px;
+  }
+
+  .about-content,
+  .contact-detail {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    padding: 8px 15px;
+  }
+}
