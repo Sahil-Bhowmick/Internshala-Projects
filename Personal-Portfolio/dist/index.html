@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sahil Bhowmick" />
+    <meta
+      name="description"
+      content="Sahil Bhowmick's personal portfolio website showcasing skills, projects, and experience as a Front-End Developer with a focus on modern web design and responsive development."
+    />
+    <meta
+      name="keywords"
+      content="Sahil Bhowmick, Front-End Developer, Web Developer, HTML, CSS, JavaScript, React, Portfolio, Web Design, Responsive Development"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -45,20 +57,75 @@
         </a>
       </div>
       <ul
-        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-lg bg-opacity-60 font-Ovo dark:bg-transparent dark:shadow-md dark:border dark:border-white/50"
       >
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li>
+          <a href="#top" class="hover:text-blue-500 dark:hover:text-orange-500"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="hover:text-blue-500 dark:hover:text-orange-500"
+            >About Me</a
+          >
+        </li>
+        <li>
+          <a
+            href="#skills"
+            class="hover:text-blue-500 dark:hover:text-orange-500"
+            >Skills</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="hover:text-blue-500 dark:hover:text-orange-500"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#certifications"
+            class="hover:text-blue-500 dark:hover:text-orange-500"
+            >Certifications</a
+          >
+        </li>
+        <li>
+          <a href="#work" class="hover:text-blue-500 dark:hover:text-orange-500"
+            >My Work</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hover:text-blue-500 dark:hover:text-orange-500"
+            >Contact Me</a
+          >
+        </li>
       </ul>
+
       <div class="flex items-center gap-4">
-        <button onclick="toggleTheme()">
-          <!-- <i class="fas fa-moon text-4xl dark:hidden"></i>
-          <i class="fas fa-sun text-4xl hidden dark:block"></i> -->
+        <!-- <button onclick="toggleTheme()">
+          <i class="fas fa-moon text-4xl dark:hidden"></i>
+          <i class="fas fa-sun text-4xl hidden dark:block !important"></i>
+
+          <img
+            src="./assets/moon_icon.png"
+            alt="moon-icon"
+            class="w-8 md:w-10 dark:hidden"
+          />
+          <img
+            src="./assets/sun_icon.png"
+            alt="sun-icon"
+            class="w-8 md:w-10 hidden dark:block"
+          />
+        </button> -->
+        <button
+          onclick="toggleTheme()"
+          class="transition-transform duration-300 ease-in-out hover:scale-110"
+        >
           <img
             src="./assets/moon_icon.png"
             alt="moon-icon"
@@ -70,13 +137,14 @@
             class="w-8 md:w-10 hidden dark:block"
           />
         </button>
+
         <a
           href="#contact"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 hover:text-blue-500 dark:hover:text-orange-500"
         >
           Contact
           <i
-            class="fas fa-arrow-right text-2xl transition-transform duration-300 ease-in-out transform hover:translate-x-4 dark:text-white"
+            class="fas fa-arrow-right text-2xl transition-transform duration-300 ease-in-out transform hover:translate-x-4 dark:text-white hover:text-blue-500 dark:hover:text-orange-500"
           ></i>
         </a>
 
@@ -173,9 +241,12 @@
         class="rounded-full w-28 h-28 md:w-32 md:h-32 mt-20 md:mt-10 object-cover object-center border-2 border-indigo-100 shadow-lg mx-auto"
       />
       <h3 class="text-2xl md:text-3xl mb-1 font-Ovo">Hi! I'm Sahil Bhowmick</h3>
-      <h1 class="text-3xl md:text-5xl font-semibold font-Ovo">
+      <h1
+        class="text-3xl md:text-5xl font-semibold font-Ovo bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 bg-clip-text text-transparent animate-gradient-slow drop-shadow-lg dark:bg-gradient-to-r dark:from-orange-400 dark:via-red-500 dark:to-yellow-600"
+      >
         Web Developer, Front-End Developer
       </h1>
+
       <p class="max-w-2xl mx-auto text-lg font-Ovo">
         Front-End Developer skilled in web development, UI design, HTML, CSS,
         JavaScript, and React. Adept at optimizing front-end design and
@@ -595,7 +666,10 @@
             experience and ensure accessibility across all devices.
           </p>
           <a href="" class="flex items-center gap-2 text-base mt-5"
-            >Read More <i class="fas fa-arrow-right text-xl"></i
+            >Read More
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
 
@@ -609,7 +683,10 @@
             user experiences across all devices.
           </p>
           <a href="" class="flex items-center gap-2 text-base mt-5"
-            >Read More <i class="fas fa-arrow-right text-xl"></i
+            >Read More
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
 
@@ -627,7 +704,10 @@
             usability and provide delightful user experiences.
           </p>
           <a href="" class="flex items-center gap-2 text-base mt-5"
-            >Read More <i class="fas fa-arrow-right text-xl"></i
+            >Read More
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
 
@@ -646,7 +726,10 @@
             high performance.
           </p>
           <a href="" class="flex items-center gap-2 text-base mt-5"
-            >Read More <i class="fas fa-arrow-right text-xl"></i
+            >Read More
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
       </div>
@@ -687,7 +770,10 @@
             href="https://drive.google.com/file/d/19-7F8I4a4L7kq3itBIhXQtfTpoSaXoA9/view?usp=drive_link"
             target="_blank"
             class="flex items-center gap-2 text-base mt-5"
-            >View Certificate <i class="fas fa-arrow-right text-xl"></i
+            >View Certificate
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
 
@@ -706,7 +792,10 @@
             development, including HTML, CSS, and JavaScript.
           </p>
           <a href="#" class="flex items-center gap-2 text-base mt-5"
-            >View Certificate <i class="fas fa-arrow-right text-xl"></i
+            >View Certificate
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
 
@@ -725,7 +814,10 @@
             back-end technologies, ensuring full-stack proficiency.
           </p>
           <a href="#" class="flex items-center gap-2 text-base mt-5"
-            >View Certificate <i class="fas fa-arrow-right text-xl"></i
+            >View Certificate
+            <i
+              class="fas fa-arrow-right text-xl transition-transform duration-300 ease-in-out transform hover:translate-x-3"
+            ></i
           ></a>
         </article>
       </div>
@@ -1043,43 +1135,57 @@
         </p>
       </header>
 
-      <form action="" class="max-w-2xl mx-auto">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="5606f45e-a403-4dcc-8a3b-5b1e63c42046"
+        />
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-8">
-          <div class="flex flex-col">
-            <label for="name" class="sr-only">Name</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="Enter your name"
-              class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-gray-100 dark:bg-darkHover/30 dark:border-white/90"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label for="email" class="sr-only">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email"
-              class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-gray-100 dark:bg-darkHover/30 dark:border-white/90"
-            />
-          </div>
+          <!-- Name Field -->
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+            class="p-3 border border-gray-400 rounded-md bg-gray-100 dark:bg-darkHover/30 dark:border-white/90"
+          />
+
+          <!-- Email Field -->
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="p-3 border border-gray-400 rounded-md bg-gray-100 dark:bg-darkHover/30 dark:border-white/90"
+          />
         </div>
-        <div class="flex flex-col mb-6">
-          <label for="message" class="sr-only">Message</label>
-          <textarea
-            id="message"
-            rows="6"
-            placeholder="Enter your message"
-            class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-gray-100 mb-6 dark:bg-darkHover/30 dark:border-white/90"
-          ></textarea>
-        </div>
+
+        <!-- Message Field -->
+        <textarea
+          id="message"
+          rows="6"
+          name="message"
+          placeholder="Enter your message"
+          required
+          class="w-full p-4 border border-gray-400 rounded-md bg-gray-100 dark:bg-darkHover/30 dark:border-white/90 mb-6"
+        ></textarea>
+
+        <!-- Submit Button -->
         <button
           type="submit"
-          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
+          class="py-3 px-8 flex items-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black transition dark:bg-transparent dark:border dark:hover:bg-darkHover hover:text-blue-500 dark:hover:text-cyan-400"
         >
           Submit now
           <i
-            class="fas fa-arrow-right text-lg font-bold transform transition-transform duration-300 hover:translate-x-2"
+            class="fas fa-arrow-right text-lg font-bold transition-transform duration-300 hover:translate-x-2"
           ></i>
         </button>
       </form>
